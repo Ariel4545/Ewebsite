@@ -14,14 +14,24 @@ def product_page(product):
     args = request.args
     name = args.get('name')
     """
-    if product == 'EgonTE' or product == 'EgonCalc' or product == 'EgonDS':
-        if product == 'EgonTE':
-            product_type = 'Text editor'
-        elif product == 'EgonCalc':
-            product_type = 'Calculator(s)'
-        elif product == 'EgonDS':
-            product_type = 'Data science Gui(s)'
-        return render_template('product_page.html', product_name=product, pt=product_type)
+    base_link = 'https://github.com/Ariel4545/'
+    product = product.capitalize()
+    if product == 'Egonte' or product == 'Egoncalc' or product == 'Egonds':
+        if product == 'Egonte':
+            product, product_type = 'EgonTE' ,'Text editor'
+            content = open('product_content/ete.text', 'r')
+            link = f'{base_link}text_editor'
+        elif product == 'Egoncalc':
+            product, product_type = 'EgonCalc' ,'Calculator(s)'
+            content = open('product_content/ecalc.text', 'r')
+            link = f'{base_link}calculators'
+        elif product == 'Egonds':
+            product, product_type = 'EgonDS' ,'Data science Gui(s)'
+            content = open('product_content/edata_science.text', 'r')
+            link = f'{base_link}Edata_science'
+
+        content = content.readlines()
+        return render_template('product_page.html', product_name=product, pt=product_type, c=content, link=link)
     else:
         return redirect(url_for('.home'))
 
