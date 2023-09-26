@@ -1,0 +1,12 @@
+Egon data science is a collection of  unique programs that are influenced by different fields in the data science space
+NumpyGui:
+as the name suggests the numpy GUI helps you to perform many actions
+on one-dimensional arrays, with a text box and organized menus
+to ease the usage of it
+PandasGui:
+as the name suggests also here the program helps you to use pandas
+functionality to manipulate/analyze data frames while you view the changes along, kind of like
+Google Sheets or Excel
+Data visualization:
+data visualization is a program that uses Matplotlib to visualize the things you need,
+the program contains many method of visualization and many settings with the method that you choose to use
