@@ -2,12 +2,6 @@
 <html lang="en">
 <head>
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-  .icon {
-    background: url('C:\Users\arino\Downloads\EgonLOGO.png');
-    height: 20px;
-    width: 20px;
-    display: block;
-    }
        <link rel="icon" type="image/x-icon" href="C:\Users\arino\Downloads\EgonLOGO.png">
     <meta charset="UTF-8">
     <title>{{product_name}}</title>
@@ -15,5 +9,13 @@
 <body>
 <h1> welcome to {{product_name}} page!</h1>
 <p> {{product_name}} is a {{pt}} made with python and tkinter.</p>
+<p>
+{% for line in c %}
+ {{line}}
+    <br>
+{% endfor %}
+</p>
+<hr>
+<p> <a href={{link}} target="_blank" rel="noopener noreferrer">Github repository</a> </p>
 </body>
 </html>
