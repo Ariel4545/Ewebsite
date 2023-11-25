@@ -1,5 +1,6 @@
-from flask import Flask
 from importlib import import_module
+
+from flask import Flask
 
 
 def create_app():

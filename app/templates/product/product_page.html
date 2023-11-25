@@ -11,12 +11,12 @@
 <h1> welcome to {{product_name}} page!</h1>
 <p> {{product_name}} is a {{pt}} made with python and tkinter.</p>
 <p>
-{% for line in c %}
- {{line}}
+    {% for line in c %}
+    {{line}}
     <br>
-{% endfor %}
+    {% endfor %}
 </p>
 <hr>
-<p> <a href={{link}} target="_blank" rel="noopener noreferrer">Github repository</a> </p>
+<p><a href={{link}} rel="noopener noreferrer" target="_blank">Github repository</a></p>
 
 {% endblock %}

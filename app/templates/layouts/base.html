@@ -2,21 +2,21 @@
 <html>
 <head>
     {% block title %}{% endblock %}
-   <link rel="icon" type="image/x-icon" href="C:\Users\arino\Downloads\EgonLOGO.png">
+    <link href="C:\Users\arino\Downloads\EgonLOGO.png" rel="icon" type="image/x-icon">
     <meta content="This website is used to showcase my projects" name="description">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/static/assets/styles.css">
+    <link href="/static/assets/styles.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/yourcode.js"></script>
     <meta charset="UTF-8">
 </head>
 <body>
-    <header>
-        <h1>Egon Development</h1>
-    </header>
-    <div class="container">
+<header>
+    <h1>Egon Development</h1>
+</header>
+<div class="container">
 
     {% block content %}
 
@@ -25,6 +25,6 @@
     <footer>
         <p>&copy; 2023 Egon Studios</p>
     </footer>
-    </div>
+</div>
 </body>
 </html>
