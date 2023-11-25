@@ -1,0 +1,22 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}
+
+<title>{{product_name}}</title>
+
+{% endblock %}
+
+{% block content %}
+
+<h1> welcome to {{product_name}} page!</h1>
+<p> {{product_name}} is a {{pt}} made with python and tkinter.</p>
+<p>
+{% for line in c %}
+ {{line}}
+    <br>
+{% endfor %}
+</p>
+<hr>
+<p> <a href={{link}} target="_blank" rel="noopener noreferrer">Github repository</a> </p>
+
+{% endblock %}
